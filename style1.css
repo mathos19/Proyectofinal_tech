@@ -1,0 +1,374 @@
+/* RESET DE ESTILOS*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+
+}
+
+/* header*/
+header{
+height: 100px;
+background: rgba(253, 187, 88, 0.774);
+padding: 0 30px;
+color: rgb(237, 247, 247);  
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.logo{  
+text-transform: uppercase;
+color: rgb(221, 248, 239);
+font-weight: 200;
+
+}
+.menû a{
+color: azure;
+text-transform: uppercase;
+text-decoration: none;
+padding: 0 10px;
+transition: 0.4s;
+
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: aquamarine;
+
+}
+
+#check{
+    display: none;
+}   
+
+#banner{
+    padding: 0 30px;
+    background-image: url(./imagen/promociones.png);
+    height: 15vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#banner::before{
+    content: '';
+    background: rgba(252, 228, 209, 0.959);
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    left: 0;
+
+}
+
+.contenido-banner{
+    position: relative;
+    color: rgb(41, 99, 99);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.contenido_carrito{
+    position: relative;
+    color: rgb(50, 170, 170);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+    
+}
+.contenido-banner h3 span{
+
+    font-weight: 600;
+}
+.boton-empezar{
+    text-decoration: none;
+    color: azure;
+    border: 1px solid aquamarine;    
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+.boton-empezar:hover{
+    background: aquamarine;
+    color: black;
+}
+
+
+/* Personal */
+
+#personas{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #dbd6d9;
+    border: #370344;
+    color: rgb(12, 12, 12);
+
+}
+#personas img{
+    border-radius: 100%;
+}
+#personas div{
+    padding: 30px 30px;
+}
+#personas div h4{
+    color: black;
+    font-size: 20px;
+    margin: 15px 0 px;
+   
+}
+
+#personas div p{
+    color: rgb(45, 45, 45);
+    font-size: 18px;    
+
+}
+.boton-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    color: rgb(34, 107, 83);    
+    padding: 10px 30px;
+    border: 3px solid aquamarine;
+    border-radius: 30px;
+    margin-top: 1px;
+    transition: all 0.4s;
+    
+}
+
+.boton-saber-mas:HOVER{
+background: aquamarine;
+color: black;
+
+}
+
+/*ICONOS*/
+
+#iconos{
+
+    padding: 25px 50px;
+    background: rgb(174, 173, 173);
+    
+}
+.contenido-iconos{
+    padding: 10px;
+    display: block;
+    justify-content:center;
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+
+.icono-mobile{
+border: none;
+text-align: center;
+
+}
+.contenido-iconos div i{
+    color: aquamarine;
+}
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.contenido-iconos div h6{
+    color: aqua;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+
+}
+
+.contenido-iconos div p{
+    color: rgb(78, 179, 179);
+    font-size: 18px;
+    font-weight: 100;
+    margin: 10px 0px;
+
+}
+
+
+/* FORMULARIO */
+
+#contacto{
+    background: #6cc091;
+    padding: 50px 0px;
+    color: azure;
+}
+
+#contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+}
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto ;
+}
+.datos-form{
+    display: flex;
+    padding: 0px;
+
+}
+form .datos-form {
+    padding: 0px 0px;
+    display: flex;
+    margin-top: 10px;
+}
+.datos-form .nombre{
+    width: 100%;
+}
+
+form .email{
+    margin-top: 10px;
+}
+
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+
+}
+form .mensaje label{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+form input,
+form textarea{
+    background: #6cc091;
+    border-radius: 10px;
+    border: 2px solid #8dcca9;
+    padding: 0px;
+    outline: 0;
+    color: azure;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: #6cc091;
+    box-shadow: 0 0 0 1px #6cc091;
+
+}
+form input::placeholder,
+form textarea::placeholder{
+    color: azure;
+}
+form .mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.boton-formulario .boton-saber-mas{
+    display: block;
+    border: 1px solid azure;
+    color: azure;
+    text-align: center;
+    transition: 0.4s;
+    
+}
+.boton-formulario .boton-saber-mas:HOVER{
+    background:#4d8b68;
+}
+footer{
+background: #66726c;
+color: #31b068;
+text-align: center;
+padding: 5px 5px;
+
+}
+footer p a{
+    text-decoration: none;
+    color: #31b068;
+}
+
+/* responsive */
+
+@media(max-width: 768px){
+
+    #foto:hover{filter: opacity(.5);}
+
+
+
+}
+@media(max-width: 768px){
+    /* header */
+    .mostrar-menu,
+    .esconder-menu{
+        display:  block;
+    }
+
+    .menu{
+        position:fixed;
+        width: 20%;
+        height:  5vh;
+        background:rgba(11, 11, 11, 0.774);
+        left: 0;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    
+    }
+    .menu a{
+        display: block;
+        padding: 10px;  
+
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+
+    }
+    #check:checked ~ .menu{
+        right: 0;
+
+    }
+#personas{
+    flex-direction: column;
+    width: 10%;
+    height: 10%;
+}
+
+.contenido-iconos{
+    flex-direction: column-reverse;
+}
+}
